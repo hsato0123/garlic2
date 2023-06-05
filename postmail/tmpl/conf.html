@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>スカイブルーガーリックサーフ | Contact : 確認画面</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="スカイブルーガーリック｜お問い合わせ確認画面" />
+	<meta name="keywords" content="クライミングホールド,スカイブルーガーリック" />
+
+<style type="text/css">
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Verdana,sans-serif;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    color: rgb(128,128,128);
+}
+
+h1{
+	font-size: 150%;
+}
+
+.box02 h5{
+	margin: 15px 0 0 0;
+	font-size: 112%;
+	line-height:1.5em;
+	font-weight: lighter;
+}
+
+.box02 h6{
+	margin: 0 0 15px 0;
+	font-size: 112%;
+	line-height:1.5em;
+	font-weight: lighter;
+}
+
+.box02 p{
+	margin: 15px 0;
+	font-size: 112%;
+	line-height:1.5em;
+	font-weight: lighter;
+}
+
+.box02 input[type="button"],
+.box02 input[type="submit"]{
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid rgb(192,192,192);
+	color: #222222;
+	background-color: rgb(224,224,224);
+	display: inline-block;
+	margin:10px 0;
+	width:100%;
+	height:60px;
+	border-radius: 0;
+	line-height:40px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 100%;
+}
+
+/*######################################################################################################
+ - 559px スマホ用設定
+######################################################################################################*/
+@media screen and  (max-width: 559px){ 
+
+header h1{
+	text-align:center;
+	margin: 30px 0;
+}
+
+.box02{
+	margin: 10px 5% 50px;
+	width: 90%;
+}
+
+}
+
+/*######################################################################################################
+560px - 959px タブレット用設定
+######################################################################################################*/
+@media screen and (min-width: 560px) and (max-width: 959px){
+
+header h1{
+	text-align:center;
+	margin: 40px 0;
+}
+
+.box02{
+	margin: 10px 10% 70px;
+	width: 80%;
+}
+
+}
+
+/*######################################################################################################
+960px 以上　デスクトップパソコン用設定
+######################################################################################################*/
+@media screen and (min-width: 960px){
+
+header h1{
+	text-align:center;
+	margin: 50px 0;
+}
+
+.contents{
+	width: 960px;
+	margin: 0 auto;
+	
+}
+
+.box02{
+	margin: 10px 100px 100px;
+	width: 760px;
+	
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+	<h1>お問合せ内容の確認</h1>
+</header>
+
+<div class="contents">
+<div class="box02">
+
+	<p>以下の内容でよろしければ「送信」ボタンを押して下さい。</p>
+	<!-- cell -->
+
+	<h5>!key!</h5>
+	<h6>!val!</h6>
+
+	<!-- /cell -->
+
+	<form action="!mail_cgi!" method="post">
+	<!-- hidden -->
+
+		<input type="button" value="戻る" onclick="history.back()">
+		<input type="submit" value="送信">
+
+	</form>
+
+</div>
+</div>
+</body>
+</html>

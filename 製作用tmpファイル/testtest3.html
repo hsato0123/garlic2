@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+	
+<body>
+
+
+
+
+<p>test 360</p>
+
+<script>
+window.addEventListener('load', function() {
+  var el = document.createElement("script");
+  el.src = "https://cdn.scaleflex.it/filerobot/js-cloudimage-360-view/v2.0.4.min.js";
+  document.body.appendChild(el);
+});
+</script>
+
+<div style="max-width:400px">
+  <div class="cloudimage-360"
+  data-folder="https://climbing-niigata.com/garlic2/images/"
+  data-filename="logo{index}.png"
+  data-amount="5"
+  data-autoplay="true"
+  data-lazyload
+  ></div>
+</div>
+
+
+</body>
+</html>

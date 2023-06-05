@@ -1,0 +1,967 @@
+@charset "UTF-8";
+
+/*######################################################################################################
+ 全サイズ共通設定
+######################################################################################################*/
+
+.bg_skyblue{
+  background-color: skyblue;
+}
+
+.next_btn:disabled{
+  opacity: 0.3;
+}
+
+.radio_btn{
+  /* display: none; */
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* バツ */
+.delete_unit_btn_x {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background: #fff; /* ボタンの背景色 */
+}
+ 
+.delete_unit_btn_x::before, .delete_unit_btn_x::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.5px; /* 棒の幅（太さ） */
+  height: 10px; /* 棒の高さ */
+  background: #333; /* バツ印の色 */
+}
+
+.delete_unit_btn_x::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+ 
+.delete_unit_btn_x::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.label_radio_btn_shape{
+  width: 20%;
+}
+
+.label_radio_btn_color{
+  width: 33.3%;
+}
+
+.label_radio_btn_size{
+  width: 16.66%;
+}
+
+.label_radio_btn_option{
+  width: 33.3%;
+}
+
+/* ラジオボタン背景アイコン */
+.label_radio_btn_shape:nth-of-type(5n+1){
+  background-image: url(../images/order/icon_shape_225.gif);
+}
+.label_radio_btn_shape:nth-of-type(5n+2){
+  background-image: url(../images/order/icon_shape_30.gif);
+}
+.label_radio_btn_shape:nth-of-type(5n+3){
+  background-image: url(../images/order/icon_shape_36.gif);
+}
+.label_radio_btn_shape:nth-of-type(5n+4){
+  background-image: url(../images/order/icon_shape_45.gif);
+}
+.label_radio_btn_shape:nth-of-type(5n){
+  background-image: url(../images/order/icon_shape_60.gif);
+}
+
+.label_radio_btn_option:nth-of-type(3n+1){
+  background-image: url(../images/order/icon_option_normal.gif);
+}
+.label_radio_btn_option:nth-of-type(3n+2){
+  background-image: url(../images/order/icon_option_r.gif);
+}
+.label_radio_btn_option:nth-of-type(3n){
+  background-image: url(../images/order/icon_option_split.gif);
+}
+
+.order_steps{
+  background-repeat: no-repeat;
+  background-size: 82%;
+  background-position:center;
+}
+
+.order_steps_inner{
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: #929292;
+}
+
+.order_steps_inner_active{
+  color: #292929;
+}
+
+.order_step1{
+  background-image: url(../images/order/order_step1.png);
+}
+
+.order_step2{
+  background-image: url(../images/order/order_step2.png);
+}
+
+.order_step3{
+  background-image: url(../images/order/order_step3.png);
+}
+
+.order_step4{
+  background-image: url(../images/order/order_step4.png);
+}
+
+
+/*######################################################################################################
+ - 559px スマホ用設定
+######################################################################################################*/
+@media screen and  (max-width: 559px){ 
+
+.order_description{
+    margin: 10px 4%;
+    width: 92%;
+  }
+.order_description p{
+    margin: 10px;
+  }
+
+.order_how_to_use_area{
+  margin: 15px 3%;
+  width: 94%;
+  color: #2a2a2a;
+  line-height: 1.5em;
+}
+
+summary {
+  cursor: pointer;
+}
+
+details {
+  padding: 5px 3%;
+  font-size: 100%;
+  
+}
+
+/* Unit エリア */
+.box_unit_area{
+  margin: 10px 4%;
+  width: 92%;
+  background-color: #fafafa;
+  box-sizing:border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada ;
+}
+
+/* Radio/Mixエリア */
+.radio_area,
+.mix_area{
+  margin: 0 2% 5px;
+  width: 96%;
+}
+
+/* Radioエリアのインナーブロック */
+.radio_inner_block{
+  margin: 15px 0 0;
+}
+
+/* Mixエリアのインナーブロック */
+.mix_inner_block{
+  float: left;
+}
+
+.mix_inner_block:first-of-type{
+  margin: 10px 2% 20px 0;
+  width: 54%;
+}
+
+.mix_inner_block:last-of-type{
+  margin: 10px 0 20px 2%;
+  width: 42%;
+}
+
+/* float 解除 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.radio_area p,
+.mix_area p{
+  margin: 5px 0;
+}
+
+.label_radio_btn{
+  display: block;
+  float: left;
+  text-align: center;
+  background-color: white;
+  box-sizing:border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada ;
+  padding: 5px;
+  margin:0px;
+  font-size:90%;
+}
+
+/* ラジオボタンの背景アイコン */
+.label_radio_btn_shape, .label_radio_btn_option{
+  padding: 32px 0 5px 0;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: top 5px center;
+}
+
+.label_radio_btn_size{
+  padding: 40px 0 5px 0;
+  background-repeat: no-repeat;
+  background-image: url(../images/order/icon_size2.gif);
+}
+
+.label_radio_btn_size:nth-of-type(6n+1){
+  background-position: top 18px center;
+  background-size: 4px;
+}
+.label_radio_btn_size:nth-of-type(6n+2){
+  background-position: top 17px center;
+  background-size: 6px;
+}
+.label_radio_btn_size:nth-of-type(6n+3){
+  background-position: top 15px center;
+  background-size: 10px;
+}
+.label_radio_btn_size:nth-of-type(6n+4){
+  background-position: top 12.5px center;
+  background-size: 15px;
+}
+.label_radio_btn_size:nth-of-type(6n+5){
+  background-position: top 10px center;
+  background-size: 20px;
+}
+.label_radio_btn_size:nth-of-type(6n){
+  background-position: top 5px center;
+  background-size: 30px;
+}
+
+.label_radio_btn_color{
+  padding: 10px 5px;
+}
+
+
+/* ラジオボタンがチェックされた時 */
+.radio_btn:checked + .label_radio_btn{
+  background-color: skyblue;
+}
+
+/* セレクト */
+.select_area {
+  background: skyblue;
+  width: 100%;
+  box-sizing:border-box;
+  border: 1px solid #dadada ;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.select_area::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  z-index: -1;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  position: relative;
+  display: block;
+  padding: 17px 6px;
+  width: 100%;
+}
+
+/* 単価 ¥ */
+.unit_price{
+  margin: 0 0 10px 5%;
+  font-size: 140%;
+}
+
+.yen{
+  display: inline-block;
+  margin: 3px 3px 0 0;
+  
+  vertical-align: top;
+  font-size: 75%;
+}
+
+/* NEWユニット追加ボタン */
+.add_new_unit_area{
+  text-align: center;
+}
+.order_sheet_btn_base{
+  margin: 5px 40%;
+  width: 20%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #dadada ;
+  background-color:white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 100%;
+}
+
+.delete_unit_btn{
+  margin: -20px 44% 10px;
+  width: 12%;
+  padding: 4px;
+  font-size: 100%;
+}
+
+.add_new_unit_btn{
+  padding: 8px;
+}
+
+/* 合計金額 */
+.total_price_area{
+  margin: 10px;
+  text-align: center;
+}
+
+.total_price_area p{
+  display: inline-block;
+  font-size:140%;
+  border-bottom: 1px solid #dadada;
+  margin: 10px auto 0;
+  padding: 2px;
+}
+
+/* 合計詳細 */
+.total_price_datail{
+  margin: 10px 0;
+  text-align: center;
+}
+
+.total_price_datail h5{
+  display: inline-block;
+  font-size:100%;
+  margin: 0 auto 5px;
+  padding: 2px;
+}
+
+.total_price_datail_content{
+  display: none;
+}
+
+.total_price_datail_content.active{
+  margin: 15px 0;
+  display: block;
+}
+
+.total_price_datail_content p{
+  line-height: 1.5em;
+  color: #2a2a2a;
+}
+
+/* 次へボタン */
+.next_btn{
+  margin: 5px 40% 30px;
+  padding: 10px 0;
+  font-size: 100%;
+  background-color: skyblue;
+}
+
+/* オーダー確認ボタン */
+.next_btn_confirm{
+  margin: 50px 25% 30px;
+  width: 50%;
+  padding: 10px 0;
+  font-size: 100%;
+  background-color: skyblue;
+}
+
+.order_steps{
+  margin: 0 0 60px 0;
+  width: 100%;
+  padding: 40px 0 8px 0;
+}
+
+.order_steps_inner{
+  font-size: 85%;
+}
+
+}
+
+/*######################################################################################################
+560px - 959px タブレット用設定
+######################################################################################################*/
+@media screen and (min-width: 560px) and (max-width: 959px){
+
+.order_description{
+  margin: 10px 5%;
+  width: 90%;
+}
+.order_description p{
+  margin: 10px;
+}
+
+.order_how_to_use_area{
+  margin: 10px 6%;
+  width: 88%;
+  color: #2a2a2a;
+  line-height: 1.5em;
+}
+
+/* Unit エリア */
+.box_unit_area{
+  margin: 10px 5%;
+  width: 90%;
+  background-color: #fafafa;
+  box-sizing:border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada ;
+}
+
+/* Radio/Mixエリア */
+.radio_area,
+.mix_area{
+  margin: 0 2% 5px;
+  width: 96%;
+}
+
+/* Radioエリアのインナーブロック */
+.radio_inner_block{
+  margin: 15px 0 0;
+}
+
+/* Mixエリアのインナーブロック */
+.mix_inner_block{
+  float: left;
+}
+
+.mix_inner_block:first-of-type{
+  margin: 10px 2% 20px 0;
+  width: 54%;
+}
+
+.mix_inner_block:last-of-type{
+  margin: 10px 0 20px 2%;
+  width: 42%;
+}
+
+
+/* float 解除 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.radio_area p,
+.mix_area p{
+  margin: 8px 0;
+}
+  
+.label_radio_btn{
+  display: block;
+  float: left;
+  text-align: center;
+  background-color: white;
+  box-sizing:border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada ;
+  padding: 10px;
+  margin:0px;
+}
+
+.label_radio_btn_shape, .label_radio_btn_option{
+  padding: 45px 0 10px 0;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: top 10px center;
+}
+
+.label_radio_btn_size{
+  padding: 45px 0 10px 0;
+  background-repeat: no-repeat;
+  background-image: url(../images/order/icon_size2.gif);
+}
+
+.label_radio_btn_size:nth-of-type(6n+1){
+  background-position: top 23px center;
+  background-size: 4px;
+}
+.label_radio_btn_size:nth-of-type(6n+2){
+  background-position: top 22px center;
+  background-size: 6px;
+}
+.label_radio_btn_size:nth-of-type(6n+3){
+  background-position: top 20px center;
+  background-size: 10px;
+}
+.label_radio_btn_size:nth-of-type(6n+4){
+  background-position: top 17.5px center;
+  background-size: 15px;
+}
+.label_radio_btn_size:nth-of-type(6n+5){
+  background-position: top 15px center;
+  background-size: 20px;
+}
+.label_radio_btn_size:nth-of-type(6n){
+  background-position: top 10px center;
+  background-size: 30px;
+}
+
+.label_radio_btn_color{
+  padding: 15px 10px;
+}
+
+/* ラジオボタンがチェックされた時 */
+.radio_btn:checked + .label_radio_btn{
+  background-color: skyblue;
+}
+
+/* セレクト */
+.select_area {
+  background: skyblue;
+  width: 100%;
+  box-sizing:border-box;
+  border: 1px solid #dadada ;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.select_area::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  z-index: -1;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  position: relative;
+  display: block;
+  outline: 0;
+  box-sizing: border-box;
+  padding: 27px 34px;
+  width: 100%;
+}
+
+/* 単価 ¥ */
+.unit_price{
+  margin: 0 0 10px 5%;
+  font-size: 140%;
+}
+
+.yen{
+  display: inline-block;
+  margin: 3px 3px 0 0;
+  
+  vertical-align: top;
+  font-size: 75%;
+}
+
+/* NEWユニット追加ボタン */
+.add_new_unit_area{
+  text-align: center;
+}
+.order_sheet_btn_base{
+  margin: 5px 40%;
+  width: 20%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #dadada ;
+  background-color:white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 110%;
+}
+
+.delete_unit_btn{
+  margin: -20px 44% 12px;
+  width: 12%;
+  padding: 6px;
+  font-size: 100%;
+}
+
+.add_new_unit_btn{
+  padding: 8px;
+}
+
+/* 合計金額 */
+.total_price_area{
+  margin: 10px;
+  text-align: center;
+}
+
+.total_price_area p{
+  display: inline-block;
+  font-size:140%;
+  border-bottom: 1px solid #dadada;
+  margin: 10px auto 10px;
+  padding: 2px;
+}
+
+/* 合計詳細 */
+.total_price_datail{
+  margin: 10px 0;
+  text-align: center;
+}
+
+.total_price_datail h5{
+  display: inline-block;
+  font-size:100%;
+  margin: 0 auto 5px;
+  padding: 2px;
+}
+
+.total_price_datail_content{
+  display: none;
+}
+
+.total_price_datail_content.active{
+  margin: 15px 0;
+  display: block;
+}
+
+.total_price_datail_content p{
+  line-height: 1.5em;
+  color: #2a2a2a;
+}
+  
+/* 次へボタン */
+.next_btn{
+    margin: 5px 40% 30px;
+    padding: 10px 0;
+    font-size: 100%;
+    background-color: skyblue;
+}
+
+/* オーダー確認ボタン */
+.next_btn_confirm{
+  margin: 50px 25% 30px;
+  width: 50%;
+  padding: 10px 0;
+  font-size: 100%;
+  background-color: skyblue;
+}
+
+.order_steps{
+  margin: 0 10% 60px;
+  width: 80%;
+  padding: 63px 0 10px 0;
+}
+
+.order_steps_inner{
+  font-size: 100%;
+}
+
+}
+
+/*######################################################################################################
+960px 以上　デスクトップパソコン用設定
+######################################################################################################*/
+@media screen and (min-width: 960px){
+
+.order_description{
+  margin: 10px auto;
+  width: 920px
+}
+.order_description p{
+  margin: 10px 0;
+}
+
+.order_how_to_use_area{
+  margin: 15px auto;
+  width: 920px;
+  color: #2a2a2a;
+  line-height: 1.5em;
+}
+
+/* Unit エリア */
+.box_unit_area{
+  margin: 10px auto;
+  width:920px;
+  background-color: #fafafa;
+  box-sizing:border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada ;
+}
+
+/* Radio/Mixエリア */
+.radio_area,
+.mix_area{
+  margin: 0 2% 5px;
+  width: 96%;
+}
+
+/* Radioエリアのインナーブロック */
+.radio_inner_block{
+  margin: 15px 0 0;
+}
+
+/* Mixエリアのインナーブロック */
+.mix_inner_block{
+  float: left;
+}
+
+.mix_inner_block:first-of-type{
+  margin: 10px 2% 20px 0;
+  width: 54%;
+}
+
+.mix_inner_block:last-of-type{
+  margin: 10px 0 20px 2%;
+  width: 42%;
+}
+
+/* float 解除 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.radio_area p,
+.mix_area p{
+  margin: 8px 0;
+}
+  
+.label_radio_btn{
+  display: block;
+  float: left;
+  text-align: center;
+  background-color: white;
+  box-sizing:border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada ;
+  padding: 10px;
+  margin:0px;
+}
+
+.label_radio_btn_shape, .label_radio_btn_option{
+  padding: 45px 0 10px 0;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: top 10px center;
+}
+
+.label_radio_btn_size{
+  padding: 45px 0 10px 0;
+  background-repeat: no-repeat;
+  background-image: url(../images/order/icon_size2.gif);
+}
+
+.label_radio_btn_size:nth-of-type(6n+1){
+  background-position: top 23px center;
+  background-size: 4px;
+}
+.label_radio_btn_size:nth-of-type(6n+2){
+  background-position: top 22px center;
+  background-size: 6px;
+}
+.label_radio_btn_size:nth-of-type(6n+3){
+  background-position: top 20px center;
+  background-size: 10px;
+}
+.label_radio_btn_size:nth-of-type(6n+4){
+  background-position: top 17.5px center;
+  background-size: 15px;
+}
+.label_radio_btn_size:nth-of-type(6n+5){
+  background-position: top 15px center;
+  background-size: 20px;
+}
+.label_radio_btn_size:nth-of-type(6n){
+  background-position: top 10px center;
+  background-size: 30px;
+}
+
+.label_radio_btn_color{
+  padding: 15px 10px;
+}
+
+/* ラジオボタンがチェックされた時 */
+.radio_btn:checked + .label_radio_btn{
+  background-color: skyblue;
+}
+
+/* セレクト */
+.select_area {
+  background: skyblue;
+  width: 100%;
+  box-sizing:border-box;
+  border: 1px solid #dadada ;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.select_area::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  z-index: -1;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  position: relative;
+  display: block;
+  outline: 0;
+  box-sizing: border-box;
+  padding: 27px 34px;
+  width: 100%;
+}
+
+/* 単価 ¥ */
+.unit_price{
+  margin: 0 0 10px 5%;
+  font-size: 140%;
+}
+
+.yen{
+  display: inline-block;
+  margin: 3px 3px 0 0;
+  
+  vertical-align: top;
+  font-size: 75%;
+}
+
+/* NEWユニット追加ボタン */
+.add_new_unit_area{
+  text-align: center;
+}
+.order_sheet_btn_base{
+  margin: 5px 40%;
+  width: 20%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #dadada ;
+  background-color:white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 110%;
+}
+
+.delete_unit_btn{
+  margin: -20px 44% 15px;
+  width: 12%;
+  padding: 10px;
+  font-size: 100%;
+}
+
+.add_new_unit_btn{
+  padding: 10px;
+}
+
+/* 合計金額 */
+.total_price_area{
+  margin: 10px;
+  text-align: center;
+}
+
+.total_price_area p{
+  display: inline-block;
+  font-size:140%;
+  border-bottom: 1px solid #dadada;
+  margin: 10px auto 10px;
+  padding: 2px;
+}
+
+/* 合計詳細 */
+.total_price_datail{
+  margin: 10px 0;
+  text-align: center;
+}
+
+.total_price_datail h5{
+  display: inline-block;
+  font-size:100%;
+  margin: 0 auto 5px;
+  padding: 2px;
+}
+
+.total_price_datail_content{
+  display: none;
+}
+
+.total_price_datail_content.active{
+  margin: 15px 0;
+  display: block;
+}
+
+.total_price_datail_content p{
+  line-height: 1.5em;
+  color: #2a2a2a;
+}
+
+/* 次へボタン */
+.next_btn{
+  margin: 5px 40% 50px;
+  padding: 10px 0;
+  font-size: 100%;
+  background-color: skyblue;
+}
+
+/* オーダー確認ボタン */
+.next_btn_confirm{
+  margin: 50px 25% 50px;
+  width: 50%;
+  padding: 10px 0;
+  font-size: 100%;
+  background-color: skyblue;
+}
+
+.order_steps{
+  margin: 0 auto 70px;
+  width: 680px;
+  padding: 60px 0 10px 0;
+}
+
+.order_steps_inner{
+  font-size: 100%;
+}
+}

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+h1 {
+  font-size: 150%;
+}
+
+.order_sheet_title {
+  margin: 10px 2%;
+}
+
+summary {
+  color: #3a3a3a;
+}
+
+.red {
+  color: red;
+}
+
+/* Unit エリア */
+.box_unit_area {
+  margin: 10px 2%;
+  width: 96%;
+  background-color: #fafafa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada;
+}
+
+/* Radio/Mixエリア */
+.radio_area,
+.mix_area {
+  margin: 0 2% 5px;
+  width: 96%;
+}
+
+/* Radioエリアのインナーブロック */
+.radio_inner_block {
+  margin: 15px 0 0;
+}
+
+/* Mixエリアのインナーブロック */
+.mix_inner_block {
+  width: 48%;
+  float: left;
+}
+
+.mix_inner_block:first-of-type {
+  margin: 10px 2% 20px 0;
+}
+
+.mix_inner_block:last-of-type {
+  margin: 10px 0 20px 2%;
+}
+
+/* float 解除 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.radio_area p,
+.mix_area p {
+  margin: 5px 0;
+}
+
+.radio_btn {
+  display: none;
+}
+
+.label_radio_btn {
+  display: block;
+  float: left;
+  text-align: center;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #dadada;
+  padding: 5px;
+  margin: 0px;
+}
+
+.label_radio_btn_shape,
+.label_radio_btn_color {
+  width: 20%;
+}
+
+.label_radio_btn_size {
+  width: 16.66%;
+}
+
+.label_radio_btn_option {
+  width: 33.3%;
+}
+
+/* ラジオボタンがチェックされた時 */
+.radio_btn:checked + .label_radio_btn {
+  background-color: skyblue;
+  padding: 5px;
+}
+
+.select {
+  background: #cfcedb;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.select::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: -1;
+}
+/*# sourceMappingURL=style1_test.css.map */

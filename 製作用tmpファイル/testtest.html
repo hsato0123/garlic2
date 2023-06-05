@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.reel-min.js"></script><!-- JQuery Reel-->
+
+</head>
+	
+<body>
+<div class="tops">
+		<img id="holdimage" src='images/ulysses/ulysses_A01.jpg' />
+				<script type='text/javascript'>
+					$(document).ready(function(){ 
+						$('#holdimage').reel({ 
+							frames: 12, 
+							cursor: 'hand', 
+							brake: 1, 
+							saves: true, 
+							images: 'images/ulysses/ulysses_A##.jpg|01..12' 
+							}); });
+				</script>
+			<h6>左右にマウスドラッグ（スマホの場合はスワイプ）すると回転します。</h6>
+</div>
+
+
+
+
+<!--
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script>
+<div class="cloudimage-360" data-folder="images/ulysses/" data-filename="ulysses_{index}.png" data-amount="2" data-autoplay="false">
+</div>
+
+-->
+
+
+<p>aaa</p>
+
+</body>
+</html>

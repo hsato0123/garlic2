@@ -1,0 +1,81 @@
+input[type=checkbox]{
+	display:none;
+	}
+	
+.check_stock{
+	display: block;
+	margin: 0 auto;
+	width:45px;
+	height:45px;
+
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: url("../images/not_checked.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat:  no-repeat;
+	
+	-webkit-transition: background-image 0.2s linear;
+	
+	/*
+	background-color: #fafafa;
+	-webkit-transition: background-color 0.2s linear;
+	transition: background-color 0.2s linear;
+	box-sizing: border-box;
+	border: 1px solid #898989;
+	color: #898989;
+	border-radius:39px;
+	line-height:39px;
+	text-align: center;
+	font-size:100%;
+	*/
+	
+}
+
+input[type=checkbox]:checked + .check_stock{
+	background-image: url("../images/checked.png");
+}
+
+
+input[type="submit"]{
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid #898989;
+	color: #eaeaea;
+	background-color: rgb(0,144,224);
+	position: relative;
+	display: block;
+	margin:5px auto;
+	width:78px;
+	height:78px;
+	border-radius:40px;
+	line-height:40px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 105%;
+
+}
+
+
+
+/*######################################################################################################
+560px - 959px タブレット用設定
+######################################################################################################*/
+@media screen and (min-width: 560px) and (max-width: 959px){
+
+.box01_01 img.stock{
+  margin: 0% 9% 4% 9%;
+}
+
+}
+
+/*######################################################################################################
+960px 以上　デスクトップパソコン用設定
+######################################################################################################*/
+@media screen and (min-width: 960px){
+
+.box01_01 img.stock{
+  margin: 0% 9% 4% 9%;
+}
+
+}
